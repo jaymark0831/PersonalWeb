@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+BODY
+{
+	background: #fff;
+}
+
+SECTION
+{
+  	min-height: 100vh;
+  	display: flex;
+  	align-items: center;
+}
+
+SECTION:nth-child(1)
+{
+  	color: #fff;
+  	background-image: url(mainbg.jpg);
+  	background-repeat: no-repeat;
+  	background-size: 100% 100vh;
+  	position: relative;
+}
+
+SECTION:nth-child(2)
+{
+  	color: #1D212B;
+}
+
+SECTION:nth-child(3){
+  	color: #1D212B;
+}
+
+SECTION:nth-child(4)
+{
+  	color: #1D212B;
+}
+
+SECTION .container
+{
+  	margin: 100px;
+}
+
+/*----------------------FIRST PAGE HEADER----------------------*/
+HEADER
+{
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	padding: 30px 100px;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	z-index: 1000;
+}
+
+.logo
+{
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 2em;
+  	text-decoration: none;
+}
+
+.navigation
+{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.navigation LI
+{
+  	list-style: none;
+}
+
+.navigation LI A
+{
+  	text-decoration: none;
+  	padding: 6px 15px;
+  	font-weight: bold;
+  	color: #fff;
+  	border-radius: 20px;
+}
+
+.navigation LI A:hover ,
+.navigation LI A.active
+{
+  	background: #fff;
+  	color: #112434;
+}
+
+/* ---------------BIG NAME FRONT PAGE------------------ */
+.big-name
+{
+  	margin-left: 8%;
+  	margin-top: 12%;
+}
+
+.big-name H2
+{
+  	font-size: 55px;
+  	margin-left: 8px;
+}
+
+.big-name H1
+{
+  	font-size: 80px;
+  	font-family: 'Poppins', sans-serif;
+  	color: #face30;
+  	margin-top: -25px;
+}
+
+.big-name P
+{
+  	font-size: 38px;
+  	font-family: 'century gothic';
+  	margin-top: -5px;
+}
+
+SVG
+{
+  	position: absolute;
+  	z-index: 1000;
+  	bottom: -27px;
+  	left: 0;
+  	right: 0;
+}
+
+/* ----------------------ABOUT ME----------------------*/
+.about_content IMG
+{
+  	width: 30%;
+  	height: 20%;
+  	border-radius: 360px;
+}
+
+.about_txt
+{
+  	width: 37%;
+}
+
+.about_txt H1
+{
+  	font-family: 'Poppins', sans-serif;
+  	font-size: 60px;
+ 	margin-bottom: 12px;
+}
+
+.about_txt P
+{
+  	font-size: 25px;
+}
+
+.about_content
+{
+  	width: 100%;
+  	max-width: 95%;
+  	margin: 0 auto;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-around;
+}
+
+/*-----------------------HOBBIES-----------------------*/
+.hobbies_content
+{
+  	width: 100%;
+  	max-width: 95%;
+  	margin: 0 auto;
+}
+
+.hobbies_content H2
+{
+  	font-size: 75px;
+  	margin-bottom: 15px;
+  	text-align: center;
+}
+
+.hobbies_flex
+{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.hobbies_box
+{
+  	min-height: 400px;
+}
+
+.hobbies_card
+{
+  	height: 345px;
+  	width: 335px;
+  	padding: 20px 35px;
+  	background: #3586ff;
+  	border-radius: 20px;
+  	margin: 15px;
+  	position: relative;
+  	overflow: hidden;
+  	text-align: center;
+}
+
+.hobbies_card A
+{
+  	font-size: 50px;
+  	color: #1D212B;
+  	text-decoration: none;
+  	cursor: pointer;
+}
+
+.hobbies_card H5
+{
+  	font-size: 25px;
+  	margin-bottom: 10px;
+}
+
+.hobbies_card P
+{
+  	font-size: 16px;
+}
+
+
+/*-----------------------GALLERY-----------------------*/
+#gallery-title
+{
+  	margin-top: -3%;
+  	font-size: 50px;
+  	font-family: 'Poppins', sans-serif;
+  	border-bottom: 1px solid #112434;
+  	box-shadow: 0 1px 0 0;
+}
+
+.gallerypo
+{
+  	display: flex;
+  	margin-left: -2%;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.gallery{
+  	border: 2px solid #fff;
+  	transition: transform .3s;
+  	margin-top: 10px;
+  	padding: 16px;
+  	overflow: hidden;
+  	object-fit: cover;
+  	float: left;
+  	height: 400px;
+  	width: 300px;
+}
+
+.gallery:after 
+{
+	content: "";
+   	position: absolute;
+   	overflow: hidden;
+   	margin: -19px 0 0 -22px;
+   	width:43px;
+   	height:40px;
+   	transform:rotate(45deg);
+   	background-color:#fff; /* to see where it is */
+}
+
+.gallery:hover 
+{
+   	border: 1x solid #333;
+   	transform: scale(1.1);
+   	border-radius: 0px;
+   	color: #fff;
+   	font-style: italic;
+   	cursor: pointer;
+}
+
+.gallery:hover::after 
+{
+  	content:none;
+}
+
+.gallery IMG
+{
+   	width: 100%;
+   	height: 400px;
+   	transition-property: all;
+   	transition-duration: .3s;
+}
+
+
+/*-----------------------Contact---------------------*/
+
+#contact_footer
+{
+  	width: 100%;
+  	height: 75vh;
+  	align-items: flex-end;
+  	display: flex;
+  	justify-content: flex-end;
+}
+
+FOOTER
+{
+  	position: absolute;
+  	width: 100%;
+  	background: #3586ff;
+  	min-height: 100px;
+  	padding: 20px 50px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+}
+
+FOOTER .contact_txt
+{
+  	position: relative;
+  	color: #fff;
+  	font-size: 40px;
+  	font-weight: 500;
+  	justify-content: center;
+  	margin-bottom: 7px;
+}
+
+FOOTER .contact_info
+{
+  	font-size: 1.1em;
+  	margin-bottom: 10px;
+  	justify-content: center;
+  	display: flex;
+}
+
+FOOTER .footer_icon, 
+FOOTER .footer_menu
+{
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin: 10px 0;
+  	flex-wrap: wrap;
+}
+
+FOOTER .footer_icon LI,
+FOOTER .footer_menu LI
+{
+  	list-style: none;
+}
+
+FOOTER .footer_icon LI A
+{
+  	font-size: 2em;
+  	color: #fff;
+  	margin: 0 10px;
+  	display: inline-block;
+  	transition: 0.5s;
+}
+
+FOOTER .footer_icon LI A:hover
+{
+  	transform: translateY(-10px);
+}
+
+FOOTER .footer_menu LI A
+{
+  	font-size: 1.2em;
+  	color: #fff;
+  	margin: 0 10px;
+  	display: inline-block;
+  	transition: 0.5s;
+  	text-decoration: none;
+  	opacity: 0.75;
+}
+
+FOOTER .footer_menu LI A:hover
+{
+  opacity: 1;
+}
+
+FOOTER P
+{
+  	color: #fff;
+  	text-align: center;
+  	margin-top: 15px;
+  	margin-bottom: 10px;
+  	font-size: 1.1em;
+}
+
+FOOTER .wave
+{
+  	position: absolute;
+  	top: -100px;
+  	left: 0;
+  	width: 100%;
+  	height: 100px;
+  	background: url(wave.png);
+  	background-size: 1000px 100px;
+}
+
+FOOTER .wave#wave1
+{
+  	z-index: 1000;
+  	opacity: 1;
+  	bottom: 0;
+  	animation: animateWave 4s linear infinite;
+}
+
+FOOTER .wave#wave2
+{
+  	z-index: 999;
+  	opacity: 0.5;
+  	bottom: 10px;
+  	animation: animateWave_02 4s linear infinite;
+}
+
+FOOTER .wave#wave3
+{
+  	z-index: 1000;
+  	opacity: 0.2;
+  	bottom: 15px;
+  	animation: animateWave 3s linear infinite;
+}
+
+FOOTER .wave#wave4
+{
+  	z-index: 999;
+  	opacity: 0.7;
+  	bottom: 20px;
+  	animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave
+{
+  	0%{
+    		background-position-x: 1000px;
+  	}
+  	100%{
+    		background-position-x: 0px;
+  	}
+}
+
+@keyframes animateWave_02
+{
+  	0%{
+    		background-position-x: 0px;
+  	}
+  	100%{
+    		background-position-x: 1000px;
+  	}
+}
+
+@media (max-width: 900px){
+
+  	.big-name H2{
+  			font-size: 30px;
+	}
+
+  	.big-name H1{
+    		font-size: 45px;
+  	}
+
+  	.big-name P{
+    		font-size: 15px;
+  	}
+
+  	.gallerypo{
+  			flex-direction: column;
+  	}
+
+  	.hobbies_flex{
+  			flex-direction: column;
+  	}
+}
+
+.reveal
+{
+  	position: relative;
+  	transform: translateY(150px);
+  	opacity: 0;
+  	transition: all 2s ease;
+}
+
+.reveal.active
+{
+  	transform: translateY(0px);
+  	opacity: 1;
+}
